@@ -1,0 +1,12 @@
+mixin feature-block(args={})
+    a(href="#").feature-block
+        span.feature-block__sale=args.sale
+        img(src=args.like, alt="like").feature-block__like
+        img(src=args.img, alt="top").feature-block__img
+        .feature-block__subtitle=args.subtitle
+        .feature-block__text=args.text
+        .feature-block__price=args.price
+            span.feature-block__price--second=args.second_price
+        .feature-block__row
+            span.feature-block__row--number=args.number
+            img(src=args.basket, alt="basket").feature-block__row--basket

@@ -1,0 +1,122 @@
+@import '../main/vars.scss';
+
+.featured{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.feature-block{
+    flex: 1 0 calc((100% - 50px)/5);
+    max-width: calc((100% - 50px)/5);
+    background: $white_color;
+    border: 0.5px solid rgba(42, 42, 42, 0.15);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+
+    &__sale{
+        background: $primary-color; 
+        width: 59px;
+        height: 25px;
+        padding: 8px 7px;
+        margin-right: 77px;
+        font-family: 'Cerebri Sans Pro';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 30px;
+        color: $white_color;
+    }
+
+    &__like{}
+
+    &__img{}
+
+    &__subtitle{
+        font-family: 'Cerebri Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 22px;
+        color: $grey_color;
+        margin-top: 9px;
+
+    }
+
+    &__text{
+        font-family: 'Cerebri Sans Pro';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        color: $primary-text-color;
+        margin-bottom: 19px;
+    }
+
+    &__price{
+        font-family: 'Cerebri Sans Pro';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        color: $primary-color;}
+}
+
+.feature-block__price--second{
+    font-family: 'Cerebri Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    color: $grey_color;
+    text-decoration: line-through;
+}
+
+.feature-block__row{
+    margin-top: 27px;
+    display: inline-block;
+
+
+    &--number{
+        position: relative;
+        bottom: 0;
+        left: -45px;
+        padding: 0 9px 8px;
+        font-family: 'Cerebri Sans Pro';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 22px;
+        color: $primary-text-color;
+       
+    }
+
+    &--basket{
+        position: relative;
+        bottom: 0;
+        right: -60px;
+    }
+}
+.feature-block__row--number::before{
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    content: '-';
+    color: $white_color;
+    width: 25px;
+    height: 25px;
+    border: solid 1px #2A2A2A;
+    background-color: $primary-text-color;
+}
+
+.feature-block__row--number::after{
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    content: '+';
+    color: $white_color;
+    width: 25px;
+    height: 25px;
+    border: solid 1px #2A2A2A;
+    background-color: $primary-text-color;
+}
