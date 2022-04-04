@@ -1,5 +1,6 @@
 @import './main/reset.scss';
 @import './main/vars.scss';
+@import '../fonts/stylesheet.scss';
 
 *{
     box-sizing: border-box;
@@ -24,17 +25,37 @@ img{
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+    min-height: 3500px
 }
 
 .subtitle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 40px;
+    margin: 60px 0 40px;  
+    font-family: 'Cerebri Sans Pro';
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $primary-text-color;
 
-    span{
-
+    span{ 
+        font-family: 'Cerebri Sans Pro';
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $primary-color;
     }
+
 }
 @import './components/categories.scss';
 @import './components/slider.scss';
 @import './components/featured.scss';
-
-
+@import './components/values.scss';
+@import './components/cash.scss';
 

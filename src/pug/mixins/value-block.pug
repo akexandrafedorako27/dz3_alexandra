@@ -1,0 +1,7 @@
+mixin value-block(args={})
+    .value-block
+        img(src=args.img, alt="fon").value-block__img
+        .value-block__content
+            .value-block__title=args.title
+            .value-block__text=args.text
+        button.value-block__btn Shop now

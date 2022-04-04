@@ -1,0 +1,21 @@
+include ../mixins/value-block.pug
+
+h2.subtitle 
+    span Offers
+    | Best Values
+section.values
+    +value-block({
+        img: "./assets/imgs/fon1.jpg",
+        title: 'Daily Essentials',
+        text: '20% off Everyday',
+    })
+    +value-block({
+        img: "./assets/imgs/fon2.jpg",
+        title: 'GET UP TO',
+        text: '30% Off',
+    })
+    +value-block({
+        img: "./assets/imgs/fon3.jpg",
+        title: 'Special Discount',
+        text: 'For All Items',
+    })
